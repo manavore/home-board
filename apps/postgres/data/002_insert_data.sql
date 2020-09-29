@@ -1,0 +1,2 @@
+COPY "manavore"."Task"("Name") FROM '/docker-entrypoint-initdb.d/data_task.csv' DELIMITER ';' CSV;
+COPY "manavore"."Period"("Name") FROM '/docker-entrypoint-initdb.d/data_period.csv' DELIMITER ';' CSV;
