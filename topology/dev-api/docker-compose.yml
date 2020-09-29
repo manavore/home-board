@@ -1,7 +1,7 @@
 version: '3.1'
 services:
     postgres:
-        build: ../../docker-images/postgres
+        build: ../../apps/postgres
         restart: always
         environment: 
             POSTGRES_PASSWORD: $POSTGRES_PASSWORD
@@ -11,6 +11,15 @@ services:
             - db-data:/var/lib/postgresql/data
         ports: 
             - "5432:5432"
+    rest_api:
+        build: ../../apps/rest-api
+        #depends_on:
+        #    - mysql_auth
+        environment: 
+            - DB_USERNAME=$POSTGRES_USER
+            - DB_PASSWORD=$POSTGRES_PASSWORD
+        ports: 
+            - "8080:8080"
 
 volumes: 
     db-data:
