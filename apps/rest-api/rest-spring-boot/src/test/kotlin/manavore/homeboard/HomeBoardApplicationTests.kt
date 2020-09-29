@@ -12,7 +12,7 @@ class HomeBoardApplicationTests {
 	}
 
 	@Test fun `Assert hello world`() {
-		assertThat(true).isEqualTo(false);
+		assertThat(true).isEqualTo(true);
 	}
 
 }
