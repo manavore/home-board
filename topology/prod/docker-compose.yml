@@ -1,7 +1,7 @@
 version: '3.1'
 services:
     postgres:
-        build: ../../apps/postgres
+        build: ../../docker-images/postgres
         restart: always
         environment: 
             POSTGRES_PASSWORD: $POSTGRES_PASSWORD
