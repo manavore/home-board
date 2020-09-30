@@ -14,6 +14,4 @@ class HelloWorldController @Autowired constructor(val hws:HelloWorldService){
     fun getHelloWorld() : String{
         return hws.HelloWorld();
     }
-
-
 }

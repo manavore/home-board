@@ -20,6 +20,11 @@
 	</properties>
 
 	<dependencies>
+		<!-- Hot reload -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
 		<!-- H2 DB -->
 		<dependency>
 			<groupId>com.h2database</groupId>
