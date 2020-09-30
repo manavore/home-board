@@ -20,6 +20,22 @@
 	</properties>
 
 	<dependencies>
+		<!-- doc -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.2.32</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.2.32</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-data-rest</artifactId>
+			<version>1.2.32</version>
+		</dependency>
 		<!-- Hot reload -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -104,6 +120,7 @@
 						<plugin>spring</plugin>
 						<plugin>jpa</plugin>
 					</compilerPlugins>
+					<languageVersion>1.4</languageVersion>
 				</configuration>
 				<dependencies>
 					<dependency>
